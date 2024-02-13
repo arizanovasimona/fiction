@@ -1,12 +1,10 @@
 package bankaccount.adapter.API;
 
-import bankaccount.config.WebConfiguration;
 import bankaccount.domain.model.BankAccount;
 import bankaccount.domain.model.Transaction;
 import bankaccount.port.BankAccountPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,7 +15,6 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
-@ComponentScan(basePackageClasses = WebConfiguration.class)
 //@RequestMapping(value = "/bankAccount")
 public class BankAccountController {
 
